@@ -1,0 +1,42 @@
+{
+  "name": "noor",
+  "version": "0.0.1",
+  "description": "Personal Portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/a01334390/Noor.git"
+  },
+  "keywords": [
+    "personal",
+    "portfolio",
+    "node",
+    "aws",
+    "blockchain",
+    "programmer"
+  ],
+  "author": "Fernando Martin Garcia Del Angel",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/a01334390/Noor/issues"
+  },
+  "homepage": "https://github.com/a01334390/Noor#readme",
+  "dependencies": {
+    "aws-sdk": "^2.315.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.12",
+    "helmet": "^3.13.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.2.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4"
+  }
+}
