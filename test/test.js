@@ -5,7 +5,7 @@ const chai = require("chai")
 const chaihttp = require("chai-http")
 chai.use(chaihttp)
 
-var app = require("..")
+var app = require("../app")
 const expect = chai.expect
 const assert = chai.assert
 
