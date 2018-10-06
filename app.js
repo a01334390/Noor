@@ -1,6 +1,3 @@
-     //AWS Needed
-    const AWS = require("aws-sdk")
-    const bodyParser = require("body-parser")
     /* Noor Homepage */
     const express = require("express")
     const helmet = require("helmet")
@@ -23,14 +20,11 @@
 
     app.get("/", function (req, res) {
         res.render("index", {
-            title: "Martin Garcia Del Angel",
-            project_name: "Noor"
+            
         })
     })
 
     /* App listen */
     app.listen(PORT, () => {
-        console.log("Listening on ${PORT}...")
+        console.log("Listening on port",PORT,"...")
     })
-
-module.exports = app

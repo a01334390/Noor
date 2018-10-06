@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>{{title}}</title>
-    {{!-- STYLE --}}
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap-grid.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap-reboot.css">
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/main.css">
-    {{!-- JS --}}
-    <script src="../js/bootstrap.bundle.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-        {{!-- FONTS --}}
-        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Noor</title>
+  <meta name="description" content="Martin's Personal Portfolio Website">
+  <meta name="author" content="Fernando Martin Garcia Del Angel">
 
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Font -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
-
 <body>
     {{>navbar}}
-    <div class="container">
-        {{{body}}}
-    </div>
+    {{{body}}}
 </body>
-{{>footer}}
-
+    {{>footer}}
 </html>
