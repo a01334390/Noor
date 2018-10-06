@@ -1,237 +1,288 @@
-{{!-- Introduction --}}
-<section id="introduction" class="introduction u-full-width">
+
+
+<!-- Introduction -->
+
+<section data-sr id="introduction" class="introduction u-full-width">
   <div class="container">
     <div class="row">
       <div class="twelve columns">
-        <h3>
-          I'm a Software Engineer passionate about creating solutions that help people and societies.
-        </h3>
+        <h2><b>Martin</b> is a software engineer who is passionate about technology and strives to create solutions that make peoples' lives better</h2>
       </div>
     </div>
   </div>
 </section>
 
-{{!-- Work --}}
-<section id="projects" class="work u-full-width">
+<!-- Work -->
+
+<section data-sr id="work" class="work u-full-width">
   <div class="container">
     <div class="row">
       <div class="twelve columns">
-        <h3 class="separator">Projects</h3>
+        <h3 class="separator">Work</h3>
       </div>
     </div>
-    {{!-- List of projects --}}
     <div class="row">
       <ul class="work-filters u-full-width">
         <li class="active">
-          <a href="#">All</a>
+          <a href="#" data-filter="*">All</a>
         </li>
         <li>
-          <a href="#">Web</a>
+          <a href="#" data-filter=".web">Web</a>
         </li>
         <li>
-          <a href="#">Desktop</a>
+          <a href="#" data-filter=".desktop">Desktop</a>
         </li>
         <li>
-          <a href="#">Mobile</a>
+          <a href="#" data-filter=".mobile">Mobile</a>
         </li>
         <li>
-          <a href="#">Blockchain</a>
+          <a href="#" data-filter=".blockchain">Blockchain</a>
         </li>
         <li>
-          <a href="#">Graphic Design</a>
+          <a href="#" data-filter=".design">Graphic Design</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".conference">Conferences and speeches</a>
+        </li>
+        <li>
+          <a href="#" data-filter=".others">Others</a>
         </li>
       </ul>
     </div>
-    {{!-- Work items --}}
-    {{!-- FUTURE: Make this dynamic --}}
     <div class="row">
-      <ul class="work-items u-cf">
-        <li class="four columns">
-          <img src="http://placehold.it/400">
+      <ul class="work-items isotope js-isotope u-cf">
+        <li class="four columns isotope-item desktop blockchain">
+          <img src="images/portfolio/work_1.svg">
           <div class="work-detail">
             <div class="vertical-centered">
-              <h3>Blockchain</h3>
-              <h4>Lyra</h4>
-              <p class="separator orange">Financial Back-End built on Hyperledger Fabric</p>
+              <p class="separator orange">Lyra</p>
+              <p>Distributed Payment System</p>
             </div>
           </div>
         </li>
-        <li class="four columns">
-          <img src="http://placehold.it/400">
+        <li class="four columns isotope-item web design">
+          <img src="images/portfolio/work_2.svg">
           <div class="work-detail">
             <div class="vertical-centered">
-              <h3>Web</h3>
-              <h4>Noor</h4>
-              <p class="separator orange">Personal portfolio website built on Node.js</p>
+              <p class="separator orange">Noor</p>
+              <p>Personal Portfolio Website</p>
             </div>
           </div>
         </li>
-        <li class="four columns">
-          <img src="http://placehold.it/400">
+        <li class="four columns isotope-item web">
+          <img src="images/portfolio/work_3.svg">
           <div class="work-detail">
             <div class="vertical-centered">
-              <h3>Web</h3>
-              <h4>Nova</h4>
-              <p class="separator orange">Medical record management system built on Java EE</p>
+              <p class="separator orange">Nova</p>
+              <p>Medical record management system</p>
             </div>
           </div>
         </li>
-        <li class="four columns">
-          <img src="http://placehold.it/400">
+        <li class="four columns isotope-item mobile desktop web">
+          <img src="images/portfolio/work_4.svg">
           <div class="work-detail">
             <div class="vertical-centered">
-              <h3>Desktop</h3>
-              <h4>Endgame</h4>
-              <p class="separator orange">NFA-DFA graphical converter built on Node.js</p>
+              <p class="separator orange">Aprix</p>
+              <p>3D multiplayer racing game</p>
             </div>
           </div>
         </li>
-        <li class="four columns">
-          <img src="http://placehold.it/400">
+        <li class="four columns isotope-item mobile design">
+          <img src="images/portfolio/work_4.svg">
           <div class="work-detail">
             <div class="vertical-centered">
-              <h3>Desktop</h3>
-              <h4>Aprix</h4>
-              <p class="separator orange">3D Multiplayer Racer game built on Unity</p>
+              <p class="separator orange">ITESM Makers Lab</p>
+              <p>AR+ML Powered iOS App</p>
             </div>
           </div>
         </li>
-        <li class="four columns">
-          <img src="http://placehold.it/400">
+        <li class="four columns isotope-item design">
+          <img src="images/portfolio/work_5.svg">
           <div class="work-detail">
             <div class="vertical-centered">
-              <h3>Graphic design</h3>
-              <h4>Aabo Technologies Branding</h4>
-              <p class="separator orange">Business identity for our blockchain startup using Adobe Illustrator</p>
+              <p class="separator orange">Aprix's world</p>
+              <p>3D Modeling the world and characters</p>
             </div>
           </div>
         </li>
-        <li class="four columns">
-          <img src="http://placehold.it/400">
+        <li class="four columns isotope-item design">
+          <img src="images/portfolio/work_6.svg">
           <div class="work-detail">
             <div class="vertical-centered">
-              <h3>Graphic Design</h3>
-              <h4>3D Modelling for Aprix</h4>
-              <p class="separator orange">World and character modelling using MagicaVoxel</p>
+              <p class="separator orange">Aabo Technologies</p>
+              <p>Branding for our blockchain company</p>
             </div>
           </div>
         </li>
+        <li class="four columns isotope-item web">
+          <img src="images/portfolio/work_1.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <p class="separator orange">Luna</p>
+              <p>Inventory and Sales Management System</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item design others">
+          <img src="images/portfolio/work_1.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <p class="separator orange">tieduprightnow</p>
+              <p>Mocap acted music video</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item design others">
+          <img src="images/portfolio/work_1.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <p class="separator orange">El Tocador</p>
+              <p>School's monthly publication</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item conference blockchain">
+          <img src="images/portfolio/work_1.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <p class="separator orange">Hyperledger Meetup 2018</p>
+              <p>Participated on the "People in Blockchain" panel</p>
+            </div>
+          </div>
+        </li>
+        <li class="four columns isotope-item conference blockchain">
+          <img src="images/portfolio/work_1.svg">
+          <div class="work-detail">
+            <div class="vertical-centered">
+              <p class="separator orange">Hyperledger Meetup Mexico</p>
+              <p>Founding member of the Mexico's Hyperledger Meetup</p>
+            </div>
+          </div>
+        </li>
+        
+
       </ul>
     </div>
   </div>
 </section>
 
-<section id="creativity" class="creativity u-full-width featured-bg-image">
+<!-- Help -->
+
+<section data-sr id="help" class="help u-full-width featured-bg-image">
   <h4 class="centered">
-    <button class="button inverted">Pure creativity</button>
+    <button class="button inverted">I'm here to help!</button>
   </h4>
 </section>
 
-{{!-- Clients --}}
-<section id="clients" class="clients u-full-width">
-  <div class="container">
-    <div class="row">
-      <h3 class="separator">Previous clients</h3>
+<!-- Clients -->
+
+<section data-sr id="clients" class="clients u-full-width">
+    <div class="container">
+      <div class="row">
+        <h3 class="separator">Previous clients</h3>
+      </div>
+      <ul class="clients u-full-width u-cf">
+        <li>
+          <img src="images/clients/tecnologico-de-monterrey-blue.png" alt="ITESM Client">
+        </li>
+        <li>
+          <img src="images/clients/Banorte.png" alt="Banorte Client">
+        </li>
+        <li>
+          <img src="images/clients/Logotipo-INMEGEN.png" alt="INMEGEN Client">
+        </li>
+        <li>
+          <img src="images/clients/ibm.png" alt="IBM Client">
+        </li>
+      </ul>
     </div>
-    <ul class="clients u-full-width u-cf">
-      <li>
-        <img src="http://placehold.it/200x50" alt="ITESM Client">
-      </li>
-      <li>
-        <img src="http://placehold.it/200x50" alt="IBM Client">
-      </li>
-      <li>
-        <img src="http://placehold.it/200x50" alt="Banorte Client">
-      </li>
-      <li>
-        <img src="http://placehold.it/200x50" alt="SEMEFO Client">
-      </li>
-      <li>
-        <img src="http://placehold.it/200x50" alt="INMEGEN Client">
-      </li>
-    </ul>
-  </div>
   </div>
 </section>
 
-<section id="why-me" class="why u-full-width">
+
+<!-- Why us -->
+
+<section data-sr id="why-me" class="why u-full-width">
   <div class="container">
     <div class="row">
       <div class="twelve columns">
         <h3 class="separator">Why me?</h3>
-        <h4>pls</h4>
+        <h4>Working on the public and private sector for over 5 years, I've earned the experience to strategically manage multicultural, multiskill, and globally distributed teams to develop the solution you need.</h4>
       </div>
     </div>
+
     <div class="row">
       <ul class="services">
         <li class="four columns">
           <div class="service-image">
-            <img src="http://placehold.it/300x150">
+            <img src="images/services/iphone5c.png">
           </div>
-          <h5>Public and Private sector experience</h5>
-          <p>Working for the private and public sector on different solutions has given me the tools and experience to
-            create well-designed and efficient applications that support a great number of customers. </p>
+          <h5>Project Management</h5>
+          <p>I've played the SCRUM Master role for multiple projects, creating the right environment to allow the team to create the right value for the organization.</p>
         </li>
         <li class="four columns">
           <div class="service-image">
-            <img src="http://placehold.it/300x150">
+            <img src="images/services/ipad_air.png">
           </div>
-          <h5>Agile and managed</h5>
-          <p>As a certified SCRUM Master, I've lent my experience on several projects to strategically bring them to
-            life on time and within budget. Currently, I'm looking forward to certify as a PMP. </p>
+          <h5>Full Stack Developer</h5>
+          <p>As part of a development team, I've worked on the Front-End, Back-End, Deployment, and Q&A roles when it was needed.</p>
         </li>
         <li class="four columns">
           <div class="service-image">
-            <img src="http://placehold.it/300x150">
+            <img src="images/services/macbook_pro.png">
           </div>
-          <h5>Best of both worlds</h5>
-          <p>I've been educated as a graphic designer as well, making me capable of producing high quality logos,
-            posters, stationary, etc. using tools like Adobe Illustrator, Corel Draw, Sketch, and many more. </p>
+          <h5>Graphic Designer</h5>
+          <p>With over 7 years of experience, I've helped companies with their graphic design needs ranging from simple posters all the way to complete brand identities. I've now learn how to model in 3D and create videos using Motion Capture techniques.</p>
         </li>
       </ul>
     </div>
   </div>
 </section>
 
-<section id="help" class="help u-full-width featured-bg-image">
+<!-- Quote -->
+
+<section data-sr id="quote" class="quote featured-bg-image u-full-width">
   <h4 class="centered">
-    <button class="button inverted">We’re here to help!</button>
+    <button class="button inverted">Get a quote now.</button>
   </h4>
 </section>
 
-<section id="contact" class="contact u-full-width">
+<!-- Contact -->
+
+<section data-sr id="contact" class="contact u-full-width">
   <div class="container">
     <div class="row">
       <div class="twelve columns">
-        <h3 class="separator">Let's make something together</h3>
-        <h4>I can't wait to see what we can achieve this time</h4>
+        <h3 class="separator">Let's create something, together</h3>
       </div>
     </div>
   </div>
 </section>
 
-<section class="container contact-us u-full-width u-max-full-width">
+<!-- Contact Us -->
+
+<section data-sr class="container contact-us u-full-width u-max-full-width">
   <div class="row">
     <div class="four columns contact-us-details">
-      <h3>Location</h3>
+      <h3>Where you can find me</h3>
       <h5>
-        Calle del Puente 222 <br />
-        San Bartolo el Chico, 14380 <br />
-        CDMX, Mexico <br />
-        Edificio de CDTC</h5>
+      Calle del Puente 222  <br />
+      Col. Ejidos de Huipulco <br />
+      CDMX, Mexico <br />
+      Martin Garcia</h5>
       <ul class="social-links">
         <li>
-          <a href="http://twitter.com/a01334390" target="_blank">
+          <a href="http://twitter.com/wdtuts" target="_blank">
             <i class="fa fa-twitter"></i>
           </a>
         </li>
         <li>
-          <a href="https://www.facebook.com/a01334390" target="_blank">
+          <a href="https://www.facebook.com/webdesigntutsplus" target="_blank">
             <i class="fa fa-facebook"></i>
           </a>
         </li>
         <li>
-          <a href="https://plus.google.com/a01334390" target="_blank">
+          <a href="https://plus.google.com/117485987435498566293" target="_blank">
             <i class="fa fa-google-plus"></i>
           </a>
         </li>
@@ -250,6 +301,7 @@
         <textarea class="u-full-width" placeholder="Message" id="messageInput"></textarea>
         <input class="button u-pull-right" type="submit" value="Send">
       </form>
+
     </div>
   </div>
 </section>
