@@ -78,11 +78,11 @@ $(document).ready(function(){
     var config = {
   
       easing: 'hustle',
-      reset:  false,
+      reset:  true,
       delay:  'onload',
       opacity: .2,
       vFactor: 0.2,
-      mobile: false
+      mobile: true
     }
   
     window.sr = new scrollReveal( config );

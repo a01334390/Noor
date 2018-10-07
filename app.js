@@ -20,9 +20,22 @@
 
     app.get("/", function (req, res) {
         res.render("index", {
-            
+           title: "Noor",
         })
     })
+
+    app.get("/coming-soon",function(req,res){
+        res.render("coming-soon",{
+            title: "Coming Soon!"
+        })
+    })
+
+    app.get("/blacky",function(req,res){
+        res.render("blacky",{
+            title:"Blacky"
+        })
+    })
+
 
     /* App listen */
     app.listen(PORT, () => {
