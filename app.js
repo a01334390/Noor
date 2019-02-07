@@ -1,43 +1,36 @@
-    /* Noor Homepage */
-    const express = require("express")
-    const helmet = require("helmet")
-    const exphbs = require("express-handlebars")
-    /* Port */
-    const PORT = process.env.PORT || 3000
-    const app = express()
-    /* Handlebars setup */
-    app.engine('.hbs', exphbs({
-        defaultLayout: 'layout',
-        extname: '.hbs',
-        layoutsDir: __dirname + "/views/layouts/",
-        partialsDir: __dirname + "/views/partials/"
-    }));
-    app.set('view engine', '.hbs');
+/**
+ * Noor app.js
+ * This is where express lives.
+ * This is where I put all my live.
+ */
 
-    /* Customs */
-    app.use(express.static(__dirname + "/public"))
-    app.use(helmet())
+ /* Required Web Packages */
+ var express = require('express');
+ var app = express();
+ var session = require('express-session');
+ var helmet = require('helmet');
+ var url = require('url');
+ var router = express.Router();
+ var bodyParser = require('body-parser');
 
-    app.get("/", function (req, res) {
-        res.render("index", {
-           title: "Noor",
-        })
-    })
+ /* Security Hardening settings */
+ app.use(helmet());
 
-    app.get("/coming-soon",function(req,res){
-        res.render("coming-soon",{
-            title: "Coming Soon!"
-        })
-    })
+ /* OS Packages */
+ var path = require('path');
+ var http = require('http');
+ 
 
-    app.get("/blacky",function(req,res){
-        res.render("blacky",{
-            title:"Blacky"
-        })
-    })
+/* Launch the server */
+app.use(express.static(__dirname+'/public',{maxAge: 3456700000}));
+require('./router/main')(app);
+/* Lets use EJS as an HTML Engine */
+app.engine('html',require('ejs').renderFile);
+app.set('views',__dirname+'/views');
+app.set('view engine','ejs');
 
-
-    /* App listen */
-    app.listen(PORT, () => {
-        console.log("Listening on port",PORT,"...")
-    })
+var server = app.listen(3000,function(){
+    var host = server.address().address
+    var port = server.address().port
+    console.log('Noor is running at http://%s:%s',host,port);
+})
