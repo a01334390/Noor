@@ -10,12 +10,10 @@
   <ul class="project">
   <% for(var i=0; i<projects.length; i++) {%>
     <li class="project">
-     <form action="/project/<%=projects[i]._id%>">
       <span><%= projects[i]._id%></span>
       <span><%= projects[i].name %></span>
       <span><%= projects[i].description %></span>
-      <button action="submit">see</button>
-    </form>
+      <span><a href="/project?name=<%= projects[i].name%>"> see </a></span>
     </li>
   <% } %>
   </ul>
