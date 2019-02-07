@@ -1,17 +1,18 @@
 {
   "name": "noor",
-  "version": "2.0.0",
+  "version": "1.0.0",
   "description": "Personal Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devserver": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/a01334390/Noor.git"
   },
-  "author": "Fernando Martin Garcia Del Angel",
-  "license": "Apache-2.0",
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/a01334390/Noor/issues"
   },
@@ -20,7 +21,10 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "express-session": "^1.15.6",
-    "helmet": "^3.15.0"
+    "helmet": "^3.15.0",
+    "mongodb": "^3.1.13"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
   }
 }
