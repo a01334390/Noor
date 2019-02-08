@@ -44,28 +44,44 @@ app.get('/', (req, res) => {
 })
 
 app.get('/portfolio',(req,res) => {
-  res.send("<h2>Portfolio</h2>")
+  res.render("portfolio.ejs")
 })
 
 app.get('/contact',(req,res) => {
-  res.send("<h2>Contact</h2>");
+  res.redirect("/soon")
 })
 
 app.get('/thanks',(req,res)=>{
-  res.send("<h2>Thanks!</h2>")
+  res.redirect("/soon")
+})
+
+app.get('/404',(req,res)=>{
+  res.redirect("/soon")
+})
+
+app.get('/soon',(req,res) => {
+  res.render("soon.ejs")
 })
 
 app.get('/about',(req,res)=>{
-  res.send("<h2>About</h2>")
+  res.redirect("/soon")
 })
 
 app.get('/portfolio/:name',(req,res) => {
   console.log(req.params.name)
     db.collection('portfolio').find({'name':req.params.name}).toArray((err,result)=>{
         if(err) return console.log(err)
-        res.render("project.ejs",{project:result})
+        if (result[0].serve == "design"){
+          res.render("project-graphic.ejs",{project:result})
+        }else{
+          res.render("project-programming.ejs",{project:result})
+        }
     })
 })
+
+app.get('*', function(req, res) {
+  res.redirect('/404');
+});
 
 app.post('/send',(req,res)=>{
   db.collection('interested').insertOne({
