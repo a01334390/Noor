@@ -106,7 +106,6 @@
 											<a href="/about">about me</a>
 										</li>
 									</ul>
-									
 						</header>
 					</div>
 				</div>
@@ -122,8 +121,7 @@
 									<div class="headings style5">
 										<div class="content">
 											<div class="info">
-												<h3 class="title" style="color:#222222">hello! my name is martin and I <span class="typed"
-													 data-words="program,design,act,play,help,run"></span></h3>
+												<h3 class="title" style="color:#222222">hello! my name is martin and I <span class="typed" data-words="program,design,act,play,help,run"></span></h3>
 											</div>
 										</div>
 									</div>
@@ -142,15 +140,17 @@
 								<div class="content-wrapp">
 									<div class="content">
 										<div class="category">
-												<% for(var x = 0; x < projects[i].category.length; x++) {%>
-													<% if(i+1 == projects[i].category[x].length){ %>
-															<%= projects[i].category[x] %>,
-													<% } else {%>
-														 <%= projects[i].category[x] %>
-													<% } %>
-												<% } %>
+											<% for(var x = 0; x < projects[i].category.length; x++) {%>
+											<% if(i+1 == projects[i].category[x].length){ %>
+											<%= projects[i].category[x] %>,
+											<% } else {%>
+											<%= projects[i].category[x] %>
+											<% } %>
+											<% } %>
 										</div>
-										<h2 class="title"><a href="/portfolio/<%=projects[i].name%>"><%=projects[i].name%>, <%=projects[i].description%></a></h2>
+										<h2 class="title"><a href="/portfolio/<%=projects[i].name%>">
+												<%=projects[i].name%>,
+												<%=projects[i].description%></a></h2>
 									</div>
 								</div>
 							</div>
@@ -158,99 +158,72 @@
 						</div>
 					</div>
 				</div>
-				<div class="row bg_img_full">
-					<div class="container">
-						<div class="row margin-lg-110t margin-lg-100b margin-md-90t margin-md-80b margin-sm-70t margin-sm-60b margin-xs-40t margin-xs-30b">
-							<div class="col-xs-12">
-								<div class="call-to-action center">
-									<h4 class="title">if you need to subscribe for our newsletter, please fill out the form below</h4>
-									<div class="form btn-style-3">
-										<div role="form" class="wpcf7" id="wpcf7-f549-p1895-o1" lang="en-US" dir="ltr">
-											<div class="screen-reader-response"></div>
-											<form action="classic-portfolio.html#wpcf7-f549-p1895-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-												<div style="display: none;">
-													<input type="hidden" name="_wpcf7" value="549" />
-													<input type="hidden" name="_wpcf7_version" value="5.0.2" />
-													<input type="hidden" name="_wpcf7_locale" value="en_US" />
-													<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f549-p1895-o1" />
-													<input type="hidden" name="_wpcf7_container_post" value="1895" />
-												</div>
-												<p>
-													<span class="wpcf7-form-control-wrap email-970">
-														<input type="email" name="email-970" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email"
-														 aria-required="true" aria-invalid="false" placeholder="enter your email" />
-													</span>
-													<input type="submit" value="subscribe" class="wpcf7-form-control wpcf7-submit" />
-												</p>
-												<div class="wpcf7-response-output wpcf7-display-none"></div>
-											</form>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
 	<footer id="footer" class=" footer-parallax modern">
 		<div class="container no-padd">
 			<div class="widg clearfix">
-				<div id="instagram_widget-2" class="sidebar-item col-xs-12 col-sm-6 col-md-3 AwaInstagramWidget">
-					<div class="item-wrap">
-						<div class="quze-widget-user quze-widget-border-bottom">
-							<img src="img/logo-1-1-300x197.png" alt="" class="insta-logo">
-
-							<div class="images-wrap clearfix">
-								<a href="https://www.instagram.com/p/Bg3eB3jBuCa/" target="_blank" class="insta-images"><img src="https://scontent.cdninstagram.com/vp/89c15297075edaaf2fa61696151b360e/5C4B228F/t51.2885-15/sh0.08/e35/s640x640/29096073_558817904501425_6741170716915269632_n.jpg"
-									 class="s-img-switch img" alt=""></a>
-								<a href="https://www.instagram.com/p/Bg3eAyHBPWP/" target="_blank" class="insta-images"><img src="https://scontent.cdninstagram.com/vp/7eaec1891e59273534cf8b39ecac3983/5C5F0F60/t51.2885-15/sh0.08/e35/s640x640/29401674_2038289003109496_4927753782726492160_n.jpg"
-									 class="s-img-switch img" alt=""></a>
-								<a href="https://www.instagram.com/p/Bg3d8exhE7b/" target="_blank" class="insta-images"><img src="https://scontent.cdninstagram.com/vp/bb2b629aeeaf67f3b5ddd270eb66e9d1/5C4DC5D2/t51.2885-15/sh0.08/e35/s640x640/29414522_584298088599045_3136099722704453632_n.jpg"
-									 class="s-img-switch img" alt=""></a>
+					<div id="instagram_widget-2" class="sidebar-item col-xs-12 col-sm-6 col-md-6 col-lg-3 AwaInstagramWidget" style="position: absolute; left: 0px; top: 95px;">
+							<div class="item-wrap">
+								<div class="quze-widget-user quze-widget-border-bottom">
+									<img src="img/logo-1-1-300x197.png" alt="" class="insta-logo">
+									<div class="images-wrap clearfix">
+										<a href="https://www.instagram.com/p/martntn/" target="_blank" class="insta-images s-back-switch">
+											<img src="https://scontent.cdninstagram.com/vp/89c15297075edaaf2fa61696151b360e/5C4B228F/t51.2885-15/sh0.08/e35/s640x640/29096073_558817904501425_6741170716915269632_n.jpg" class="s-img-switch img" alt="" style="display: none;">
+										</a>
+										<a href="https://www.instagram.com/p/martntn/" target="_blank" class="insta-images s-back-switch">
+											<img src="https://scontent.cdninstagram.com/vp/7eaec1891e59273534cf8b39ecac3983/5C5F0F60/t51.2885-15/sh0.08/e35/s640x640/29401674_2038289003109496_4927753782726492160_n.jpg" class="s-img-switch img" alt="" style="display: none;">
+										</a>
+										<a href="https://www.instagram.com/p/martntn/" target="_blank" class="insta-images s-back-switch">
+											<img src="https://scontent.cdninstagram.com/vp/bb2b629aeeaf67f3b5ddd270eb66e9d1/5C4DC5D2/t51.2885-15/sh0.08/e35/s640x640/29414522_584298088599045_3136099722704453632_n.jpg" class="s-img-switch img" alt="" style="display: none;">
+										</a>
+									</div>
+									<div class="instagram-text"><span>follow us on </span>
+										<a href="https://www.instagram.com/martntn">martntn</a>
+									</div>
+			
+								</div>
 							</div>
-							<div class="instagram-text"><span>follow us on </span>
-								<a href="https://www.instagram.com/awastud.io">awastud.io</a>
+						</div>
+						<div id="text-2" class="sidebar-item col-xs-12 col-sm-6 col-md-6 col-lg-3 widget_text"
+							 style="position: absolute; left: 292px; top: 95px;">
+							<div class="item-wrap"><h5>leave a message</h5>
+								<div class="textwidget"><p><a href="mailto:martingarciadelangel@me.com">martingarciadelangel@me.com</a></p>
+									<p><a href="tel:(+52)15545228963">(+52) 1 55 4522 8963</a></p>
+								</div>
 							</div>
-
 						</div>
-					</div>
-				</div>
-				<div id="text-2" class="sidebar-item col-xs-12 col-sm-6 col-md-3 widget_text">
-					<div class="item-wrap">
-						<h5>leave a message</h5>
-						<div class="textwidget">
-							<p><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></p>
-							<p><a href="tel:(+68)120034509">(+68) 120034509</a></p>
+						<div id="nav_menu-2" class="sidebar-item col-xs-12 col-sm-6 col-md-6 col-lg-3 widget_nav_menu"
+							 style="position: absolute; left: 585px; top: 95px;">
+							<div class="item-wrap"><h5>explore</h5>
+								<div class="menu-footer-menu-container">
+									<ul id="menu-footer-menu" class="menu">
+										<li id="menu-item-198"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-198"><a
+												href="/about">About me</a></li>
+										<li id="menu-item-197"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-197"><a
+												href="/contact">Contact</a></li>
+										<li id="menu-item-105"
+											class="menu-item menu-item-type-post_type menu-item-object-page menu-item-105"><a
+												href="/portfolio">Portfolio</a></li>
+									</ul>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div id="nav_menu-2" class="sidebar-item col-xs-12 col-sm-6 col-md-3 widget_nav_menu">
-					<div class="item-wrap">
-						<h5>explore</h5>
-						<div class="menu-footer-menu-container">
-							<ul id="menu-footer-menu" class="menu">
-								<li class="menu-item"><a href="about-us.html">About us</a></li>
-								<li class="menu-item"><a href="contact-us.html">Contact us</a></li>
-								<li class="menu-item"><a href="blog.html">blog</a></li>
-								<li class="menu-item menu-item-type-custom menu-item-object-custom "><a href="#">Career</a></li>
-							</ul>
+						<div id="text-3" class="sidebar-item col-xs-12 col-sm-6 col-md-6 col-lg-3 widget_text"
+							 style="position: absolute; left: 877px; top: 95px;">
+							<div class="item-wrap"><h5>studio</h5>
+								<div class="textwidget"><p>Calle del Puente 222, Ex-Ejidos de Huipulco, CDMX Mexico</p>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>
-				<div id="text-3" class="sidebar-item col-xs-12 col-sm-6 col-md-3 widget_text">
-					<div class="item-wrap">
-						<h5>studio</h5>
-						<div class="textwidget">
-							<p>2005 Stokes Isle Apt. 896, Venaville, New York 10010, USA</p>
-						</div>
-					</div>
-				</div>
 			</div>
 
 
-			<div class="copyright col-xs-12 text-center ">©Awa, designed and developed by <a href="http://foxthemes.com/">FoxThemes</a></div>
+			<div class="copyright col-xs-12 text-center ">©Noor, designed and developed by <a href="http://www.martntn.com/">martntn</a></div>
 
 		</div>
 	</footer>
