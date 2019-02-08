@@ -38,7 +38,6 @@ MongoClient.connect(fs.readFileSync('serverpassword.txt', 'utf8'), (err, client)
 app.get('/', (req, res) => {
     db.collection('portfolio').find().toArray((err, result) => {
       if (err) return console.log(err)
-      console.log(result)
       res.render('index.ejs', {projects: result})
     })
 })
@@ -46,7 +45,6 @@ app.get('/', (req, res) => {
 app.get('/portfolio',(req,res) => {
   db.collection('portfolio').find().toArray((err, result) => {
     if (err) return console.log(err)
-    console.log(result)
     res.render('portfolio.ejs', {projects: result})
   })
 })
@@ -94,6 +92,5 @@ app.post('/send',(req,res)=>{
     message: req.body.textarea
   },(err,res)=>{
     if(err) return console.log(err)
-    console.log('did it!')
   })
 })
