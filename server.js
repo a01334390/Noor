@@ -8,6 +8,7 @@ const express = require('express');
 const bodyParser = require('body-parser')
 const helmet = require('helmet')
 const fs = require('fs')
+const PORT = process.env.PORT || 3000
 
 /* Database Libraries */
 const MongoClient = require('mongodb').MongoClient
@@ -29,7 +30,7 @@ app.use(express.static('public'))
 MongoClient.connect(fs.readFileSync('serverpassword.txt', 'utf8'), (err, client) => {
   if (err) return console.log(err)
   db = client.db('noor') // whatever your database name is
-  app.listen(3000, () => {
+  app.listen(PORT, () => {
     console.log('listening on 3000...')
   })
 })
@@ -86,11 +87,14 @@ app.get('*', function(req, res) {
 });
 
 app.post('/send',(req,res)=>{
+
   db.collection('interested').insertOne({
     name: req.body.name,
     email: req.body.email,
     message: req.body.textarea
-  },(err,res)=>{
-    if(err) return console.log(err)
+  },function(error,response){
+    if(error) return console.log(error)
+    res.redirect('/');
   })
 })
+
